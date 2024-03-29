@@ -54,7 +54,7 @@ search.addEventListener("click", () => {
         return;
       } else {
         cityHide.textContent = city;
-        container.style.height = "555px";
+        container.style.height = "565px";
         container.classList.add("active");
         weatherBox.classList.add("active");
         weatherDetails.classList.add("active");
@@ -164,8 +164,6 @@ function updateClock() {
 // Update the clock every second
 setInterval(updateClock, 1000);
 
-const apiKey = '804c77e03329cbb12122cffa1a098d0a'; 
 
-const cities = ["Tanger", "Rabat", "Fes", "Kasba Tadla"];
 
 

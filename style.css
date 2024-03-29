@@ -232,3 +232,13 @@ body {
   align-items: center;
 
 }
+#clock{
+  color: white;
+  font-size: large;
+ 
+}
+.clock{
+  display: flex;
+  justify-content: center;
+}
+
