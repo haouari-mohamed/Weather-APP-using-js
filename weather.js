@@ -1,17 +1,5 @@
 
 
-
-
-
-/* const APIKey = "244155d43b7fc901f0f438ae76092427";
-const city = document.querySelector(".search-box input").value;
-
-fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${APIKey}`).then(res => {
-   return res.json();
-}).then(data => {
-  console.log(data);
-}) */
-
 const container = document.querySelector(".container");
 const search = document.querySelector(".search-box button");
 const weatherBox = document.querySelector(".weather-box");
