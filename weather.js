@@ -112,7 +112,7 @@ search.addEventListener("click", () => {
           infoWeather.insertAdjacentElement("afterend", elCloneInfoWeather);
           infoHumidity.insertAdjacentElement("afterend", elCloneInfoHumidity);
           infoWind.insertAdjacentElement("afterend", elCloneInfoWind);
-        }, 2200);
+        }, 1200);
 
         const cloneInfoWeather = document.querySelectorAll(
           ".info-weather.active-clone"
@@ -139,8 +139,33 @@ search.addEventListener("click", () => {
             cloneInfoWeatherFirst.remove();
             cloneInfoHumidityFirst.remove();
             cloneInfoWindFirst.remove();
-          }, 2200);
+          }, 1200);
         }
       }
     });
 });
+function updateClock() {
+  var now = new Date();
+
+  var hour = now.getHours();
+  var minute = now.getMinutes();
+  var second = now.getSeconds();
+
+  hour = hour < 10 ? "0" + hour : hour;
+  minute = minute < 10 ? "0" + minute : minute;
+  second = second < 10 ? "0" + second : second;
+
+  var time = hour + ":" + minute + ":" + second;
+
+  var clockElement = document.getElementById("clock");
+  clockElement.textContent = time;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
+const apiKey = '804c77e03329cbb12122cffa1a098d0a'; 
+
+const cities = ["Tanger", "Rabat", "Fes", "Kasba Tadla"];
+
+
